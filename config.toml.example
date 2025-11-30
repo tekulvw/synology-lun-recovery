@@ -1,0 +1,22 @@
+# Synology NAS Configuration
+# Copy this file to config.toml and fill in your credentials
+
+[nas]
+# Hostname or IP address of your Synology NAS
+host = "192.168.1.100"
+
+# Port number (default: 5001 for HTTPS, 5000 for HTTP)
+port = 5001
+
+# Admin username
+username = "admin"
+
+# Admin password
+password = "your-password-here"
+
+# Use SSL/HTTPS connection (set to false to use HTTP instead of HTTPS)
+use_ssl = true
+
+# Verify SSL certificate (set to false for self-signed certificates)
+# Only applies when use_ssl = true
+verify_ssl = true
