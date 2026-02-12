@@ -125,9 +125,9 @@ class SynologyAPI:
         self._api_request(
             api="SYNO.Core.ISCSI.LUN",
             version=1,
-            method="clone_snapshot",
-            uuid=lun_uuid,
-            snapshot_uuid=snapshot_uuid
+            method="restore_snapshot",
+            src_lun_uuid=json.dumps(lun_uuid),
+            snapshot_uuid=json.dumps(snapshot_uuid)
         )
 
     def __enter__(self):
